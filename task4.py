@@ -145,5 +145,112 @@ if a != b:
 elif a == b:
     s = a**2
     print(f"Это квадрат, его площадь равна {s}")
+ 
+# task 3 var 4
+input("Как твои дела? ")
+def whatsapp(a):
+    if a == "плохо" or "не хорошо" or "...":
+        print(":(")
+    elif a == "хорошо" or "нормально" or "отлично":
+        print(":)")
+    else:
+        print(":/")
 
-#task 3 
+a = ("плохо" or "хорошо" or "нормально"or "отлично" or "не хорошо" or "...")
+print(whatsapp("плохо"))
+
+# task 1 var 5
+
+num1 = int(input("Введите первое число: "))
+num2 = int(input("Введите второе число: "))
+if num1 > num2:
+    num1 ** num2
+    print(num1)
+elif num2 > num1:
+    num2 ** num1
+    print(num2)
+else:
+    num1 == num2
+    print(num1+num2)
+
+# task 2
+n = 5
+new_message = "Hello! How are you?"
+print(new_message)
+answer = input()
+if answer.startswith(new_message[:n]):
+    print(True)
+else:
+    print(False)
+
+# task 3
+
+a = int(input("Введите длину первого отрезка "))
+b = int(input("Введите длину второго отрезка "))
+if a > b:
+    print(f"Первый отрезок длинее второго на {a - b}")
+elif b > a:
+    print(f"Второй отрезок длинее первого на {b - a}")
+else:
+    print("Отрезки равны")
+
+# task 1 var 6
+
+str = input("Введите строку")
+if str[0] == str[-1]:
+    print(True)
+else:
+    print(False)
+
+# task 2
+
+num = int(input("Введите число"))
+
+if num // 2:
+    num1 = num ** 2
+    print(num1)
+elif num // 3:
+    num1 = num ** 3
+    print(num1)
+else:
+    num1 = num * 100
+    print(num1)
+    
+# task3
+
+num1 = int(input("Введите первое число"))
+num2 = int(input("Введите второе число"))
+if num1 < 0 and num2 > 0:
+    num3 = num1 + 1000
+    print(num3, num2)
+elif num2 < 0 and num1 > 0:
+    num3 = num2 + 1000
+    print(num3, num1)
+elif num1 < 0 and num2 < 0:
+    print(False)
+elif num1 > 0 and num2 > 0:
+    print(True)
+
+# task 1 var 7
+
+user_str = input("Введите строку: ")
+print(user_str and user_str[-1] in "яиею")
+
+# task 2 
+
+side_1 = int(input("Введите первую сторону треугольника"))
+side_2 = int(input("Введите вторую сторону треугольника"))
+side_3 = int(input("Введите третью сторону треугольника"))
+if side_1 + side_2 > side_3:
+    print(True)
+elif side_1 + side_3 > side_2:
+    print(True)
+elif  side_2 + side_3 > side_1:
+    print(True)
+else:
+    side_1 <= 0
+    print(False)
+    side_2 <= 0
+    print(False)
+    side_3 <= 0
+    print(False)
