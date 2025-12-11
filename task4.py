@@ -254,3 +254,70 @@ else:
     print(False)
     side_3 <= 0
     print(False)
+#task 3
+
+# a = int(input("введите число: "))
+
+# if a  - 10 < 0:
+#     a %= 10
+#     if a == 1:
+#         b = a % 3
+#     elif a == 2:
+#         b = a % 2
+#     elif a >= 3:
+#         b = a ** 2
+# elif a - 10 > 0:
+#     if a == 1:
+#         b = a % 3
+#     elif a == 2:
+#         b = a % 2
+#     elif a >= 3:
+#         b = a ** 2
+
+# print(b)
+
+#var 8 task 1
+
+
+# a == str(input("Паролл?? "))
+
+# if a == qwerty123:
+#     print("False")
+
+# else:
+# ((((((((((((((((((
+
+
+
+# task 2
+
+# pc_number = 777
+
+
+# a = int(input("Введите первое число: "))
+# b = int(input("Введите второе число: "))
+
+# if a < pc_number < b or b < pc_number < a or pc_number < a < b or pc_number < b < a:
+#     print("True")
+
+# else:
+#     print("False")
+
+
+#task 3
+
+lamp_1 = 0
+lamp_2 = 0
+
+a = int(input("какую лампочку зажечь?"))
+
+if a == 1:
+    lamp_1 = 1
+    print("лампочка 1 горит")
+
+elif a == 2:
+    lamp_2 = 2
+    print("вторая лампочка горит")
+
+else:
+    print("обе лампочки не горят")
