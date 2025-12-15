@@ -1,6 +1,6 @@
 #task 1 var 1
 
-num = int(input("Введите целое число "))
+num = int(input("Введите целое число: "))
 
 if num == 0:
     num =+ 1
@@ -14,7 +14,7 @@ else:
 
 #task 2
 
-your_str = input("Введите строку")
+your_str = input("Введите строку: ")
 if "." in your_str:
         print(True)
 elif "," in your_str:
@@ -24,8 +24,8 @@ else:
 
 #task 3
 
-num1 = int(input("Введите первое целое число "))
-num2 = int(input("Введите второе целое число "))
+num1 = int(input("Введите первое целое число: "))
+num2 = int(input("Введите второе целое число: "))
 numbers = (num1, num2)
 if all(n % 3 == 0 for n in numbers):
     print(True)
@@ -44,13 +44,13 @@ def stars(num):
     elif num >= 0:
         print("*" * num)
     
-num = int(input("Введите целое число "))
+num = int(input("Введите целое число: "))
 print(stars(num))
 
 #task 2
 
-str_1 = input("Введите первую строку ")
-str_2 = input("Введите вторую строку ")
+str_1 = input("Введите первую строку: ")
+str_2 = input("Введите вторую строку: ")
 if str_1 == str_2:
     print(True)
 else:
@@ -146,7 +146,7 @@ elif a == b:
     s = a**2
     print(f"Это квадрат, его площадь равна {s}")
  
-# task 3 var 4
+# task 3 
 input("Как твои дела? ")
 def whatsapp(a):
     if a == "плохо" or "не хорошо" or "...":
@@ -185,8 +185,8 @@ else:
 
 # task 3
 
-a = int(input("Введите длину первого отрезка "))
-b = int(input("Введите длину второго отрезка "))
+a = int(input("Введите длину первого отрезка: "))
+b = int(input("Введите длину второго отрезка: "))
 if a > b:
     print(f"Первый отрезок длинее второго на {a - b}")
 elif b > a:
@@ -196,7 +196,7 @@ else:
 
 # task 1 var 6
 
-str = input("Введите строку")
+str = input("Введите строку: ")
 if str[0] == str[-1]:
     print(True)
 else:
@@ -204,7 +204,7 @@ else:
 
 # task 2
 
-num = int(input("Введите число"))
+num = int(input("Введите число: "))
 
 if num // 2:
     num1 = num ** 2
@@ -218,8 +218,8 @@ else:
     
 # task3
 
-num1 = int(input("Введите первое число"))
-num2 = int(input("Введите второе число"))
+num1 = int(input("Введите первое число: "))
+num2 = int(input("Введите второе число: "))
 if num1 < 0 and num2 > 0:
     num3 = num1 + 1000
     print(num3, num2)
@@ -256,52 +256,50 @@ else:
     print(False)
 #task 3
 
-# a = int(input("введите число: "))
+a = int(input("введите число: "))
 
-# if a  - 10 < 0:
-#     a %= 10
-#     if a == 1:
-#         b = a % 3
-#     elif a == 2:
-#         b = a % 2
-#     elif a >= 3:
-#         b = a ** 2
-# elif a - 10 > 0:
-#     if a == 1:
-#         b = a % 3
-#     elif a == 2:
-#         b = a % 2
-#     elif a >= 3:
-#         b = a ** 2
+if a  - 10 < 0:
+    a %= 10
+    if a == 1:
+        b = a % 3
+    elif a == 2:
+        b = a % 2
+    elif a >= 3:
+        b = a ** 2
+elif a - 10 > 0:
+    if a == 1:
+        b = a % 3
+    elif a == 2:
+        b = a % 2
+    elif a >= 3:
+        b = a ** 2
 
-# print(b)
+print(b)
 
 #var 8 task 1
 
 
-# a == str(input("Паролл?? "))
+str_1 = input("Введите пароль: ")
 
-# if a == qwerty123:
-#     print("False")
+if len(str_1) < 8 or str_1 == "qwerty123":
+    print(False)
+else:
+    print(True)
 
-# else:
-# ((((((((((((((((((
+
 
 
 
 # task 2
 
-# pc_number = 777
+a = int(input("Введите первое число: "))
+b = int(input("Введите второе число: "))
 
+if a < pc_number < b or b < pc_number < a or pc_number < a < b or pc_number < b < a:
+    print("True")
 
-# a = int(input("Введите первое число: "))
-# b = int(input("Введите второе число: "))
-
-# if a < pc_number < b or b < pc_number < a or pc_number < a < b or pc_number < b < a:
-#     print("True")
-
-# else:
-#     print("False")
+else:
+    print("False")
 
 
 #task 3
@@ -309,11 +307,85 @@ else:
 lamp_1 = 0
 lamp_2 = 0
 
-a = int(input("какую лампочку зажечь?"))
+a = int(input("какую лампочку зажечь?: "))
 
 if a == 1:
     lamp_1 = 1
-    print("лампочка 1 горит")
+    print("Первая лампочка горит")
+
+elif a == 2:
+    lamp_2 = 2
+    print("Вторая лампочка горит")
+
+else:
+    print("Обе лампочки не горят")
+
+
+# task 1 var 9
+
+switch_1 = False
+switch_2 = True
+answer = str(input("Включить? "))
+if answer == "Да" or "да":
+    switch_1 == True
+    print("Все включено, switch_1 = True, switch_2 = True")
+else:
+    print("switch_1 = False, switch_2 = True")
+
+#task 2 
+
+num = int(input("Введите число: "))
+if num % 2 == 0 and num > 0:
+    print(True,"even")
+elif num % 2 != 0 and num > 0:
+    print(True, "odd")
+else:
+    print("False")
+
+# task 3
+
+str_1 = str(input("Введите строку: "))
+first_symbol = str_1[0]
+if first_symbol == "/":
+    print("command")
+else:
+    print("It's string")
+
+#task 1 var 10
+
+str_1 = input("Введите строку: ")
+long = len(str_1)
+if long == 0:
+    print("None")
+elif long <= 5:
+    print("short")
+elif 6 >= long <= 10:
+    print("normal")
+elif long > 10:
+    print("long")
+
+# task 2
+
+num_1 = int(input("Введите целое число: "))
+if num_1 < 0:
+    num_1 = 1_000_000
+    print(num_1)
+elif num_1 == 0:
+    num_1 == 2 and num_1 ** 2
+    print(num_1)
+else:
+    num_1 ** 3
+    print(num_1)
+
+# task 3
+
+number_1 = 10
+number_2 = 100
+number_3 = int(input("Введите число: "))
+if number_1 <= number_3 <= number_2:
+    print(True)
+else:
+    print(False)
 
 elif a == 2:
     lamp_2 = 2
