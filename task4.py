@@ -159,7 +159,7 @@ def whatsapp(a):
 a = ("плохо" or "хорошо" or "нормально"or "отлично" or "не хорошо" or "...")
 print(whatsapp("плохо"))
 
-# task 1 var 5
+#task 1 var 5
 
 num1 = int(input("Введите первое число: "))
 num2 = int(input("Введите второе число: "))
@@ -173,7 +173,7 @@ else:
     num1 == num2
     print(num1+num2)
 
-# task 2
+#task 2
 n = 5
 new_message = "Hello! How are you?"
 print(new_message)
@@ -183,7 +183,7 @@ if answer.startswith(new_message[:n]):
 else:
     print(False)
 
-# task 3
+#task 3
 
 a = int(input("Введите длину первого отрезка: "))
 b = int(input("Введите длину второго отрезка: "))
@@ -194,7 +194,7 @@ elif b > a:
 else:
     print("Отрезки равны")
 
-# task 1 var 6
+#task 1 var 6
 
 str = input("Введите строку: ")
 if str[0] == str[-1]:
@@ -202,7 +202,7 @@ if str[0] == str[-1]:
 else:
     print(False)
 
-# task 2
+#task 2
 
 num = int(input("Введите число: "))
 
@@ -216,7 +216,7 @@ else:
     num1 = num * 100
     print(num1)
     
-# task3
+#task 3
 
 num1 = int(input("Введите первое число: "))
 num2 = int(input("Введите второе число: "))
@@ -231,12 +231,12 @@ elif num1 < 0 and num2 < 0:
 elif num1 > 0 and num2 > 0:
     print(True)
 
-# task 1 var 7
+#task 1 var 7
 
 user_str = input("Введите строку: ")
 print(user_str and user_str[-1] in "яиею")
 
-# task 2 
+#task 2 
 
 side_1 = int(input("Введите первую сторону треугольника"))
 side_2 = int(input("Введите вторую сторону треугольника"))
@@ -276,8 +276,7 @@ elif a - 10 > 0:
 
 print(b)
 
-#var 8 task 1
-
+#task 1 var 8
 
 str_1 = input("Введите пароль: ")
 
@@ -285,10 +284,6 @@ if len(str_1) < 8 or str_1 == "qwerty123":
     print(False)
 else:
     print(True)
-
-
-
-
 
 # task 2
 
@@ -300,7 +295,6 @@ if a < pc_number < b or b < pc_number < a or pc_number < a < b or pc_number < b 
 
 else:
     print("False")
-
 
 #task 3
 
@@ -320,8 +314,7 @@ elif a == 2:
 else:
     print("Обе лампочки не горят")
 
-
-# task 1 var 9
+#task 1 var 9
 
 switch_1 = False
 switch_2 = True
@@ -364,7 +357,7 @@ elif 6 >= long <= 10:
 elif long > 10:
     print("long")
 
-# task 2
+#task 2
 
 num_1 = int(input("Введите целое число: "))
 if num_1 < 0:
@@ -377,7 +370,7 @@ else:
     num_1 ** 3
     print(num_1)
 
-# task 3
+#task 3
 
 number_1 = 10
 number_2 = 100
